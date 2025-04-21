@@ -43,7 +43,7 @@ const Contact = () => {
     if (!validateForm()) return;
     
     try {
-      const response = await fetch('http://localhost:5000/api/sendEmail', {
+      const response = await fetch('https://portfolio-backend-1-j7vn.onrender.com/api/sendEmail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
